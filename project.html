@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+
+<!--
+Author: Rhianna Goguen
+
+Content: This is a simple game application. It is an simple platforming
+	game featuring a bird character. He can glide and jump through the levels.
+	You can access a few different tabs on this page:
+	- 'Story' contains a basic story summary for the game with images and text, 
+	- 'Instructions' contains instructions on how to play the game,
+	- 'Game' starts the game.
+	
+Made with help majorly from https://www.w3schools.com/howto/howto_js_tabs.asp, 
+https://www.w3schools.com/graphics/game_intro.asp as well as
+https://www.w3schools.com/js/default.asp for general javascript help.
+
+-->
+
+<html>
+
+	<head>
+	
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		
+		<!--CSS file for the game and tabs-->
+		<link rel="stylesheet" type="text/css" href="style.css">
+		
+	</head>
+	
+	<body onload="openTab(event, 'Story')">
+
+		<!-- Tab definitions, when you click a tab, their content is displayed -->
+		<div class="tab">
+			<button class="tablinks" onclick="openTab(event, 'Story')">Story and Background</button>
+			<button class="tablinks" onclick="openTab(event, 'Instructions')">Instructions</button>
+			<button class="tablinks" onclick="openTab(event, 'Game')">Game</button>
+		</div>
+
+		<!-- Each tab's content -->
+		<div id="Story" class="tabcontent">
+			<h3>Story and Background</h3>
+			<img src="assets/phillipswee_left_w.png">
+			<img src="assets/phillipswee_right_w.png">
+			<img src="assets/phillipswee_left_w.png">
+			<img src="assets/phillipswee_right_w.png">
+			<img src="assets/phillipswee_left_w.png">
+			<img src="assets/phillipswee_right_w.png">
+			<img src="assets/phillipswee_left_w.png">
+			<img src="assets/phillipswee_right_w.png">
+			<img src="assets/phillipswee_left_w.png">
+			<img src="assets/phillipswee_right_w.png">
+			<img src="assets/phillipswee_left_w.png">
+			<img src="assets/phillipswee_right_w.png">
+			<img src="assets/phillipswee_left_w.png">
+			<img src="assets/phillipswee_right_w.png">
+			<img src="assets/phillipswee_left_w.png">
+			<img src="assets/phillipswee_right_w.png">
+			<p><br/>Welcome to my Javascript project!<br/><br/>
+			On this page, you can play a very basic game
+			that I've called "Get Out, Phillipswee!" where you take control of Phillipswee,
+			the Raven familiar of my Dungeons and Dragons character, Deeno.
+			Phillipswee has fallen into a hole, and it's up to you to get him out!<br/><br/>
+			Javascript and HTML are used in this project, with a lot of help from the
+			tutorials from <a href="https://www.w3schools.com/default.asp">W3Schools</a>.<br/></br></p>
+			
+			<img src="assets/phillipswee.jpg" class="photo"><img src="assets/Deeno.jpg" class="photo">
+			
+			<p></br>This is a photo of the real Phillipswee on the left, because it's fun to have a 'real'
+			familiar when I'm playing DnD! The second photo is a commission I got of both Phillipswee,
+			and my character, Deeno. It was drawn by <a href="http://www.laurenmarieadams.com/">Hijinxx Art</a>.<br/><br/></p>
+
+		</div>
+
+		<div id="Instructions" class="tabcontent">
+			<h3>Instructions</h3>
+			<img src="assets/phillipswee_right_w.png">
+			<img src="assets/phillipswee_left_w.png">
+			<img src="assets/phillipswee_right_w.png">
+			<img src="assets/phillipswee_left_w.png">
+			<img src="assets/phillipswee_right_w.png">
+			<img src="assets/phillipswee_left_w.png">
+			<img src="assets/phillipswee_right_w.png">
+			<img src="assets/phillipswee_left_w.png">
+			<img src="assets/phillipswee_right_w.png">
+			<img src="assets/phillipswee_left_w.png">
+			<img src="assets/phillipswee_right_w.png">
+			<img src="assets/phillipswee_left_w.png">
+			<img src="assets/phillipswee_right_w.png">
+			<img src="assets/phillipswee_left_w.png">
+			<img src="assets/phillipswee_right_w.png">
+			<img src="assets/phillipswee_left_w.png">
+			<p></br>The objective of this game is to guide Phillipswee out of the hole. To do this
+			he needs to fly out of it and get back outside, avoiding a few obstacles along the way
+			that seem to be sticking out of the sides of the hole.<br/><br/>
+			If you collide with an obstacle, the game will restart, <b>so be careful!</b><br/>
+			To descend, just don't hit the fly upwards button.<br/>
+			To restart the game, just refresh the page.<br/><br/>
+			<h4>Keyboard Controls</h4>
+			W: Fly Upwards<br/>
+			A: Move Left<br/>
+			D: Move Right</br></br>
+		  </p>
+		</div>
+
+		<div id="Game" class="tabcontent">
+		  <h3>Get Out, Phillipswee!</h3>
+			<img src="assets/phillipswee_left_w.png">
+			<img src="assets/phillipswee_right_w.png">
+			<img src="assets/phillipswee_left_w.png">
+			<img src="assets/phillipswee_right_w.png">
+			<img src="assets/phillipswee_left_w.png">
+			<img src="assets/phillipswee_right_w.png">
+			<img src="assets/phillipswee_left_w.png">
+			<img src="assets/phillipswee_right_w.png">
+			<img src="assets/phillipswee_left_w.png">
+			<img src="assets/phillipswee_right_w.png">
+			<img src="assets/phillipswee_left_w.png">
+			<img src="assets/phillipswee_right_w.png">
+			<img src="assets/phillipswee_left_w.png">
+			<img src="assets/phillipswee_right_w.png">
+			<img src="assets/phillipswee_left_w.png">
+			<img src="assets/phillipswee_right_w.png">
+		  <p id="gameContent"><p>
+		</div>
+
+		<!-- Javascript scripts -->
+		<script src="Tabs.js"></script>
+		<script src="Game.js"></script>
+	   
+	</body>
+	
+</html> 

@@ -1,0 +1,17 @@
+What do we want to do with this project?
+
+I want to have some sort of navigation to different pages
+Maybe a game? One page could be a welcome, one could be instructions and one could be the crappy game.
+Basic text adventure? With fun images? Not sure how that would go, too many images... to many pages,
+I think I might need a DB for something that complex and I'm not in the mood for that.
+
+So... we want something not too complex. 
+Navigation onto three(?) pages. 
+	- Instructions
+	- Welcome
+	- Content
+	
+But... what do we want our content to be? 
+		- Some sort of crappy game would be cool
+		- Maybe a text adventure?
+		
